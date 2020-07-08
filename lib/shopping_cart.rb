@@ -36,5 +36,12 @@ class ShoppingCart
     total
   end
 
+  def is_full?
+    if total_number_of_products >= capacity
+      true
+    else
+      false
+    end
+  end
 
 end
