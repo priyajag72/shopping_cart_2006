@@ -53,3 +53,31 @@ class ProductTest < Minitest::Test
     assert_equal false, product2.is_hoarded?
   end
 end
+
+
+
+# [1] pry(main)> require './lib/product'
+# => true
+# [2] pry(main)> product = Product.new(:paper, 'toilet paper', 3.70, '10')
+# => #<Product:0x00007f8d918fc070
+#  @category=:paper,
+#  @is_hoarded=false,
+#  @name="toilet paper",
+#  @quantity=10,
+#  @unit_price=3.7>
+# [3] pry(main)> product.category
+# => :paper
+# [4] pry(main)> product.name
+# => "toilet paper"
+# [5] pry(main)> product.unit_price
+# => 3.7
+# [6] pry(main)> product.quantity
+# => 10
+# [7] pry(main)> product.total_price
+# => 37.0
+# [8] pry(main)> product.is_hoarded?
+# => false
+# [9] pry(main)> product.hoard
+# => true
+# [10] pry(main)> product.is_hoarded?
+# => true
