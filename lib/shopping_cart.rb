@@ -44,4 +44,12 @@ class ShoppingCart
     end
   end
 
+  def products_by_category(category)
+    @products.find do |product|
+      if product.category == category
+        p product
+      end
+    end
+  end
+
 end
