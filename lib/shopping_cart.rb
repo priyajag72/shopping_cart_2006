@@ -6,4 +6,9 @@ class ShoppingCart
     @name = name
     @capacity = capacity
   end
+
+  def capacity
+    @capacity.gsub(/[abcdefghijklmnopqrstuvwxyz]/, '')
+    @capacity.to_i
+  end
 end
