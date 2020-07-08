@@ -91,10 +91,16 @@ class ShoppingCartTest < Minitest::Test
 
   # def test_percent_of_cart_occupied
   # end
+      # pry(main)> cart.percentage_occupied
+      # #=> 43.33
 
   # def test_cart_can_sort_products_by_quantity
   # end
+      # pry(main)> cart.sorted_products_by_quantity
+      # #=> [#<Product:0x00007fccd2985f53...>, #<Product:0x00007fccd29b5720...>, #<Product:0x00007fccd2985f48...>, #<Product:0x00007fccd2985f51...>]
 
   # def test_cart_can_print_all_products_with_appropriate_information
   # end
+      # pry(main)> cart.product_breakdown
+      # #=> {:meat=>[#<Product:0x00007fccd2985f48...>], :paper=> [#<Product:0x00007fccd29b5720...>, #<Product:0x00007fccd2985f51...>], :produce=> [#<Product:0x00007fccd2985f53...>]}
 end
