@@ -1,6 +1,6 @@
 class Product
 
-  attr_reader :category, :name
+  attr_reader :category, :name, :unit_price
 
   def initialize(category, name, unit_price, quantity)
     @category = category
