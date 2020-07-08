@@ -36,4 +36,13 @@ class ShoppingCartTest < Minitest::Test
     cart.add_product(product2)
     assert_equal [product1, product2], cart.products
   end
+
+  def test_cart_has_correct_details
+    cart = ShoppingCart.new("King Soopers", "30items")
+    bob = cart.details
+    assert_equal bob, cart.details
+    # require 'pry'; binding.pry
+    # [1] pry(#<ShoppingCartTest>)> cart.details
+    # => {:name=>"King Soopers", :capacity=>30}
+  end
 end
